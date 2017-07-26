@@ -1,0 +1,363 @@
+
+@import "variables";
+@import "responsive";
+
+.main-header{
+  background-color: $couleur;
+  .search-bar{
+    padding: 5px 0 5px 0;
+    overflow: hidden;
+    form {
+      float: right;
+      input{
+        border: solid 1px $vert;
+        background-color: $couleur;
+      }
+      button{
+        background: none;
+        float: left;
+        border: hidden;
+        color: $vert;
+        display: block;
+        position: absolute;
+        top: 10px;
+      }
+    }
+  }
+
+  .nav-menu{
+    overflow: hidden;
+    button{
+      background-color: $vert;
+      span{
+        background-color: #fff;
+      }
+    }
+    nav.navbar{
+      margin-bottom: 0;
+    }
+    .nav.navbar-nav{
+      float: right;
+      li{
+        a{
+          color: $noir;
+        }
+      }
+      li:hover{
+        a{
+         background: none;
+          position: relative;
+        }
+        a:after{
+          content: "";
+          display: block;
+          width: 80%;
+          height: 3px;
+          background-color: $vert;
+          margin-left: 5%;
+        }
+      }
+
+    }
+  }
+}
+
+.slide{
+  height: 500px;
+  width: auto;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  .content-text{
+    width: 50%;
+    color: #fff;
+    position: absolute;
+    bottom: 70px;
+    z-index: 1;
+  }
+  .fa-angle-left{
+    font-size: 50px;
+    float: left;
+    display: block;
+    position: relative;
+    top: 200px;
+  }
+  .fa-angle-right{
+    font-size: 50px;
+    float: right;
+    display: block;
+    position: relative;
+    top: 200px;
+  }
+
+  .fa{
+    background-color: rgba(#6cc068,0.7);
+    color: #fff;
+    border-radius: 5px;
+    width: 5%;
+    height: 25%;
+    text-align: center;
+  }
+
+  .btn{
+    color: #fff;
+    background-color: $vert;
+    display: block;
+    position: relative;
+    top: 400px;
+    float: right;
+  }
+}
+
+.slide:after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(#000,0.4);
+  left: 0;
+  top: 0;
+}
+
+.main-theme{
+  h1{
+    text-align: center;
+    padding: 20px 0;
+  }
+  .choix-theme{
+    background-color: $couleur;
+    a{
+      color: $noir;
+      padding: 5px;
+      font-size: 16px;
+      text-align: center;
+    }
+    a:hover{
+      color: $vert;
+    }
+  }
+  .expert-photos{
+    padding: 20px 5px;
+    a{
+      text-align: center;
+      display: inline-block;
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      .nom{
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        background-color: rgba($vert,0.5);
+        position: absolute;
+        left: 0;
+        top: 100%;
+        transition: all 0.8s ease;
+        color: #fff;
+      }
+    }
+    a:hover{
+      .nom{
+        top: 0;
+      }
+    }
+  }
+}
+
+
+.theme-pays{
+  background-color: $couleur;
+  h1{
+    text-align: center;
+    padding: 20px 0;
+  }
+  p{
+    display:  inline-block;
+    padding: 100px 10px 10px 10px;
+  }
+}
+
+.actu{
+  padding-bottom: 10px;
+  h1{
+    text-align: center;
+    padding: 20px 0;
+  }
+  ul{
+    list-style: none;
+    a{
+      color: #fff;
+      padding: 20px 30px;
+      font-size: 16px;
+      text-align: center;
+      vertical-align: top;
+      background-color: $vert;
+    }
+  }
+  .actualite{
+    border: solid 2px $vert;
+    padding: 10px;
+    margin: 5px 0;
+    img{
+      display: block;
+      margin: auto;
+    }
+    span{
+      float: right;
+      color: $vert-fonce;
+    }
+  }
+}
+
+.contacts-footer{
+  background-color: $couleur;
+  h1{
+    text-align: center;
+    padding: 20px 0;
+  }
+  .form-contact{
+    input{
+      background-color: $couleur;
+      color: $vert;
+      border: solid 1px $vert;
+      border-radius: 5px;
+      height: auto;
+      width: 100%;
+      padding: 10px;
+      margin: 10px;
+    }
+    #sujet{
+      width: 100%;
+    }
+    textarea{
+      background-color: $couleur;
+      color: $vert;
+      border: solid 1px $vert;
+      border-radius: 5px;
+      height: auto;
+      width: 100%;
+      padding: 10px;
+      margin: 10px;
+      resize-x: none;
+    }
+    button{
+      background-color: $vert;
+      border: solid 1px $couleur;
+      border-radius: 5px;
+      color: $noir;
+      height: 30px;
+      width: 100px;
+      margin: 10px;
+    }
+  }
+  #main-logo2{
+    img{
+      width: 70%;
+    }
+  }
+}
+
+
+.main-footer{
+  background-color: $vert-fonce;
+  p{
+    color: #fff;
+  }
+  #social-media{
+    list-style: none;
+    float: right;
+    li{
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 5px;
+      a{
+        color: #fff;
+        padding: 5px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.main-img{
+  padding: 0;
+  .content{
+    h1{
+      margin-top: 0;
+      padding: 10px;
+    }
+    P{
+      padding: 10px;
+    }
+    height: 500px;
+    width: auto;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }
+}
+.liste{
+  padding: 10px;
+  .expert-descrip{
+    border: solid 2px $vert;
+    padding: 5px;
+    margin: 5px 0;
+    a{
+      color: $vert;
+    }
+    .btn{
+      float: right;
+      background: none;
+      color: $noir;
+      border-radius: 0;
+      border: solid 1px $vert-fonce;
+    }
+  }
+}
+
+#side{
+  background-color: $couleur;
+  .side_menu{
+    padding: 10px;
+
+    .search-bar{
+      padding: 5px 0 5px 0;
+      overflow: hidden;
+      form {
+        float: right;
+        input{
+          border: solid 1px $vert;
+          background-color: $couleur;
+          width: 100%;
+        }
+        button{
+          background: none;
+          float: left;
+          border: hidden;
+          color: $vert;
+          display: block;
+          position: absolute;
+          top: 20px;
+        }
+      }
+    }
+    a{
+      color: $vert;
+    }
+  }
+
+  .theme{
+    h1{
+      color: $noir;
+    }
+    .btn{
+      float: right;
+      background-color: $couleur;
+      color: $noir;
+      border-radius: 0;
+      border: none;
+    }
+  }
+}
