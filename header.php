@@ -46,6 +46,7 @@ respond.min.js"></script>
                             <button class="fa fa-search" type="submit"></button>
                         </form>
                     </div>
+                    
                     <div class="nav-menu">
                         <nav class="navbar" role="navigation">
                             <div class="navbar-header">

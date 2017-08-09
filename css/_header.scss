@@ -1,0 +1,59 @@
+.main-header{
+  background-color: $couleur;
+  .search-bar{
+    padding: 5px 0 5px 0;
+    overflow: hidden;
+    form {
+      float: right;
+      input{
+        border: solid 1px $vert;
+        background-color: $couleur;
+      }
+      button{
+        background: none;
+        float: left;
+        border: hidden;
+        color: $vert;
+        display: block;
+        position: absolute;
+        top: 10px;
+      }
+    }
+  }
+
+  .nav-menu{
+    overflow: hidden;
+    button{
+      background-color: $vert;
+      span{
+        background-color: #fff;
+      }
+    }
+    nav.navbar{
+      margin-bottom: 0;
+    }
+    .nav.navbar-nav{
+      float: right;
+      li{
+        a{
+          color: $noir;
+        }
+      }
+      li:hover{
+        a{
+          background: none;
+          position: relative;
+        }
+        a:after{
+          content: "";
+          display: block;
+          width: 80%;
+          height: 3px;
+          background-color: $vert;
+          margin-left: 5%;
+        }
+      }
+
+    }
+  }
+}

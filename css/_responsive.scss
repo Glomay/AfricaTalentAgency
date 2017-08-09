@@ -2,6 +2,14 @@
 
 /*responsive design*/
 @media (max-width: 767px) {
+  .main-header{
+    .nav-menu{
+      overflow: hidden;
+      .nav.navbar-nav{
+        float: none;
+      }
+    }
+  }
   .slide{
     .content-text{
       padding: 10px;
