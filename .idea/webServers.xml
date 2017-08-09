@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4bee77ca-2473-4cca-9fd2-8d181dd6f864" name="Africa Talents" url="http://147.135.193.31">
+        <fileTransfer host="147.135.193.31" port="21" rootFolder="/httpdocs/talent" password="dfc4dff3dfc6dfc8df99df9adf8fdf9f" username="globalemergence">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

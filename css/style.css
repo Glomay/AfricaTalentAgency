@@ -16,28 +16,24 @@
         display: block;
         position: absolute;
         top: 10px; }
-  .main-header .nav-menu {
-    overflow: hidden; }
-    .main-header .nav-menu button {
-      background-color: #6cc068; }
-      .main-header .nav-menu button span {
-        background-color: #fff; }
-    .main-header .nav-menu nav.navbar {
-      margin-bottom: 0; }
-    .main-header .nav-menu .nav.navbar-nav {
-      float: right; }
-      .main-header .nav-menu .nav.navbar-nav li a {
-        color: #151112; }
-      .main-header .nav-menu .nav.navbar-nav li:hover a {
-        background: none;
-        position: relative; }
-      .main-header .nav-menu .nav.navbar-nav li:hover a:after {
-        content: "";
-        display: block;
-        width: 80%;
-        height: 3px;
-        background-color: #6cc068;
-        margin-left: 5%; }
+  .main-header .nav-menu button {
+    background-color: #6cc068; }
+    .main-header .nav-menu button span {
+      background-color: #fff; }
+  .main-header .nav-menu .nav.navbar-nav {
+    float: right; }
+    .main-header .nav-menu .nav.navbar-nav li a {
+      color: #151112; }
+    .main-header .nav-menu .nav.navbar-nav li:hover a {
+      background: none;
+      position: relative; }
+    .main-header .nav-menu .nav.navbar-nav li:hover a:after {
+      content: "";
+      display: block;
+      width: 80%;
+      height: 3px;
+      background-color: #6cc068;
+      margin-left: 5%; }
 
 .main-theme h1 {
   text-align: center;
@@ -271,10 +267,8 @@
 
 /*responsive design*/
 @media (max-width: 767px) {
-  .main-header .nav-menu {
-    overflow: hidden; }
-    .main-header .nav-menu .nav.navbar-nav {
-      float: none; }
+  .main-header .nav-menu .nav.navbar-nav {
+    float: none; }
 
   .slide .content-text {
     padding: 10px;

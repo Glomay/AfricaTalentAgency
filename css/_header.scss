@@ -22,15 +22,11 @@
   }
 
   .nav-menu{
-    overflow: hidden;
     button{
       background-color: $vert;
       span{
         background-color: #fff;
       }
-    }
-    nav.navbar{
-      margin-bottom: 0;
     }
     .nav.navbar-nav{
       float: right;
