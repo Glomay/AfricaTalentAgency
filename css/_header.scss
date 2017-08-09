@@ -40,16 +40,7 @@
           background: none;
           position: relative;
         }
-        a:after{
-          content: "";
-          display: block;
-          width: 80%;
-          height: 3px;
-          background-color: $vert;
-          margin-left: 5%;
-        }
       }
-
     }
   }
 }
