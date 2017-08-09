@@ -199,7 +199,7 @@
     height: auto;
     width: 100%;
     padding: 10px;
-    margin: 10px; }
+    margin: 10px 0; }
   .contacts-footer .form-contact #sujet {
     width: 100%; }
   .contacts-footer .form-contact textarea {
@@ -210,8 +210,8 @@
     height: auto;
     width: 100%;
     padding: 10px;
-    margin: 10px;
-    resize-x: none; }
+    margin: 10px 0;
+    resize: none; }
   .contacts-footer .form-contact button {
     background-color: #6cc068;
     border: solid 1px #ebebd9;
@@ -219,7 +219,7 @@
     color: #151112;
     height: 30px;
     width: 100px;
-    margin: 10px; }
+    margin: 10px 0; }
   .contacts-footer #main-logo2 img {
     width: 70%; }
 

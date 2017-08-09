@@ -226,7 +226,7 @@
       height: auto;
       width: 100%;
       padding: 10px;
-      margin: 10px;
+      margin: 10px 0;
     }
     #sujet{
       width: 100%;
@@ -239,8 +239,8 @@
       height: auto;
       width: 100%;
       padding: 10px;
-      margin: 10px;
-      resize-x: none;
+      margin: 10px 0;
+      resize: none;
     }
     button{
       background-color: $vert;
@@ -249,7 +249,7 @@
       color: $noir;
       height: 30px;
       width: 100px;
-      margin: 10px;
+      margin: 10px 0
     }
   }
   #main-logo2{
