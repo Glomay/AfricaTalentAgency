@@ -71,13 +71,8 @@ respond.min.js"></script>
                                             Nos experts <b class="caret"></b>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">jmeter</a></li>
-                                            <li><a href="#">EJB</a></li>
-                                            <li><a href="#">Jasper Report</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">One more separated link</a></li>
+                                            <li><a href="#">Experts par thème</a></li>
+                                            <li><a href="#">Experts par pays</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Nos services</a></li>
