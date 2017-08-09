@@ -1,0 +1,67 @@
+.main-footer{
+  background-color: $couleur;
+  h1{
+    text-align: center;
+    padding: 20px 0;
+  }
+  .form-contact{
+    input{
+      background-color: $couleur;
+      color: $vert;
+      border: solid 1px $vert;
+      border-radius: 5px;
+      height: auto;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    #sujet{
+      width: 100%;
+    }
+    textarea{
+      background-color: $couleur;
+      color: $vert;
+      border: solid 1px $vert;
+      border-radius: 5px;
+      height: auto;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      resize: none;
+    }
+    button{
+      background-color: $vert;
+      border: solid 1px $couleur;
+      border-radius: 5px;
+      color: $noir;
+      height: 30px;
+      width: 100px;
+      margin: 10px 0
+    }
+  }
+  #main-logo2{
+    img{
+      width: 70%;
+    }
+  }
+}
+.footer-bottom{
+  background-color: $vert-fonce;
+  p{
+    color: #fff;
+  }
+  #social-media{
+    list-style: none;
+    float: right;
+    li{
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 5px;
+      a{
+        color: #fff;
+        padding: 5px;
+        font-size: 16px;
+      }
+    }
+  }
+}

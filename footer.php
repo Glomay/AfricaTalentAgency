@@ -1,5 +1,5 @@
 
-<div class="contacts-footer">
+<footer class="main-footer">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-9">
@@ -38,25 +38,27 @@
             </div>
         </div>
     </div>
-</div>
-<div class="main-footer">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6">
-                <p>Copyright © 2017, Africa Talent Agency. Tous droits reservés.</p>
-            </div>
-            <div class="col-sm-6">
-                <ul id="social-media">
-                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-angle-up"></i></a></li>
-                </ul>
+
+    <div class="footer-bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>Copyright © 2017, Africa Talent Agency. Tous droits reservés.</p>
+                </div>
+                <div class="col-sm-6">
+                    <ul id="social-media">
+                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-angle-up"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</footer>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
