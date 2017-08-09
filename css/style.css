@@ -2,6 +2,7 @@
   background-color: #ebebd9; }
   .main-header .search-bar form input {
     display: block;
+    width: 100%;
     padding: 5px;
     border: solid 1px #6cc068;
     background-color: #ebebd9; }
@@ -17,6 +18,10 @@
     background-color: #6cc068; }
     .main-header .nav-menu button span {
       background-color: #fff; }
+  .main-header .nav-menu .dropdown-menu {
+    border: none;
+    box-shadow: none;
+    border-radius: 0; }
   .main-header .nav-menu .nav.navbar-nav {
     float: right; }
     .main-header .nav-menu .nav.navbar-nav li a {
