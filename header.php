@@ -41,12 +41,16 @@ respond.min.js"></script>
                 </div>
                 <div class="col-sm-9">
                     <div class="search-bar">
-                        <form action="">
-                            <input type="search"/>
-                            <button class="fa fa-search" type="submit"></button>
-                        </form>
+                        <div class="row">
+                            <div class="col-sm-5 col-sm-push-7">
+                                <form action="">
+                                    <input type="search"/>
+                                    <button class="fa fa-search" type="submit"></button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    
+
                     <div class="nav-menu">
                         <nav class="navbar" role="navigation">
                             <div class="navbar-header">

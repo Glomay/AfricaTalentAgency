@@ -1,21 +1,18 @@
 .main-header {
   background-color: #ebebd9; }
-  .main-header .search-bar {
-    padding: 5px 0 5px 0;
-    overflow: hidden; }
-    .main-header .search-bar form {
-      float: right; }
-      .main-header .search-bar form input {
-        border: solid 1px #6cc068;
-        background-color: #ebebd9; }
-      .main-header .search-bar form button {
-        background: none;
-        float: left;
-        border: hidden;
-        color: #6cc068;
-        display: block;
-        position: absolute;
-        top: 10px; }
+  .main-header .search-bar form input {
+    display: block;
+    padding: 5px;
+    border: solid 1px #6cc068;
+    background-color: #ebebd9; }
+  .main-header .search-bar form button {
+    background: none;
+    float: left;
+    border: hidden;
+    color: #6cc068;
+    display: block;
+    position: absolute;
+    top: 10px; }
   .main-header .nav-menu button {
     background-color: #6cc068; }
     .main-header .nav-menu button span {

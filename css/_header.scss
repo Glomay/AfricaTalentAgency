@@ -1,11 +1,10 @@
 .main-header{
   background-color: $couleur;
   .search-bar{
-    padding: 5px 0 5px 0;
-    overflow: hidden;
     form {
-      float: right;
       input{
+        display: block;
+        padding: 5px;
         border: solid 1px $vert;
         background-color: $couleur;
       }
