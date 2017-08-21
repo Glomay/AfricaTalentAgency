@@ -4,9 +4,7 @@
         <div class="owl-carousel owl-theme" id="carousel">
             <?php for($i=1; $i<=3; $i++):?>
             <div class="slide" style="background-image: url('img/img<?php echo $i;?>.jpg')">
-                <div class="container" id="content">
-                    <a href="#" class="fa fa-angle-left" id="left"></a>
-                    <a href="#" class="fa fa-angle-right" id="right"></a>
+                <div class="container"">
                     <div class="content-text">
                         <h1>Lorem ipsum dolor sit amet</h1>
                         <p>Donec convallis, nibh nec blandit suscipit, ante enim tristique ex, eget elementum tellus tellus sed arcu. Phasellus risus nunc, vestibulum a mi vel, faucibus rhoncus sem.</p>
@@ -16,50 +14,53 @@
             </div>
     <?php endfor;?>
         </div>
+        <div class="slider-controls">
+            <span class="control-left fa fa-angle-left"></span>
+            <span class="control-right fa fa-angle-right"></span>
+        </div>
     </div>
 
 <div class="main-theme">
     <h1>Nos experts par theme</h1>
     <div class="container-fluid">
-        <div class="choix-theme">
-            <div class="row">
-<?php for($i=1; $i<=4; $i++):?>
-                <div class="col-sm-3">
-                    <a href="#" class="active">
-                        <div class="theme">Consectetur adipiscing</div>
-                    </a>
-                </div>
-<?php endfor;?>
+        <ul class="choix-theme hidden-xs">
+            <?php
+            $themes = array("theme-1","theme-2","theme-3","theme-4");
+            ?>
+            <li class="theme">
+                <button class="button all active"  data-theme="*">Tout</button>
+            </li>
+<?php foreach ($themes as $theme):?>
+    <li class="theme">
+                        <button class="button" data-theme=".<?php echo $theme;?>"><?php echo $theme;?></button>
+    </li>
+<?php endforeach;?>
+        </ul>
 
-            </div>
-        </div>
+        <select class="select-theme visible-xs">
+            <option selected value="*">Tout</option>
+            <?php foreach ($themes as $theme):?>
+                <option value=".<?php echo $theme;?>"><?php echo $theme;?></option>
+            <?php endforeach;?>
+        </select>
 
-        <div class="expert-photos">
-            <div class="row">
-<?php for($i=1; $i<=4; $i++):?>
-                <div class="col-sm-3">
-                    <a href="#" class="frame">
-                        <img src="img/exp<?php echo $i;?>.jpg" class="img-responsive">
-                        <div class="nom"><h4>Nulla feugiat magna</h4>
-                            <p>Nulla feugiat magna mi, et placerat quam rutrum eu. Pellentesque hendrerit interdum massa, et pellentesque arcu commodo vulputate.</p>
-                        </div>
-                    </a>
-                </div>
-<?php endfor;?>
 
-            </div>
-            <div class="row">
-<?php for($i=5; $i<=8; $i++):?>
-                <div class="col-sm-3">
-                    <a href="#" class="frame">
-                        <img src="img/exp<?php echo $i;?>.jpg" class="img-responsive">
-                        <div class="nom"><h4>Nulla feugiat magna</h4>
-                            <p>Nulla feugiat magna mi, et placerat quam rutrum eu. Pellentesque hendrerit interdum massa, et pellentesque arcu commodo vulputate.</p>
-                        </div>
-                    </a>
+        <div class="experts-isotope">
+            <?php for($i = 1; $i <= 8; $i++):?>
+                <?php $j = rand(0,3);?>
+            <a href="#" class="expert <?php echo $themes[$j];?>">
+                <div class="frame">
+                    <img src="holder.js/560x400" alt="Holder" class="img-responsive">
                 </div>
-<?php endfor;?>
-            </div>
+                <div class="details">
+                    <div class="nom">Expert <?php echo $i; ?> <br><?php echo $themes[$j];?></div>
+                    <div class="bio">
+                        Nulla feugiat magna mi, et placerat quam rutrum eu. Pellentesque hendrerit interdum
+                        massa, et pellentesque arcu commodo vulputate.
+                    </div>
+                </div>
+            </a>
+            <?php endfor;?>
         </div>
     </div>
 </div>

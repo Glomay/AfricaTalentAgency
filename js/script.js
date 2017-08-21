@@ -1,10 +1,52 @@
 $(document).ready(function(){
-    $(".main-carousel .owl-carousel").owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        dots: false,
-    });
+
+    $(function () {
+        var mainCarousel = $(".main-carousel"),
+            owl = mainCarousel.find('.owl-carousel'),
+            prev = $('.control-left'),
+            next = $('.control-right');
+
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            dots: false,
+        });
+
+        prev.click(function () {
+            owl.trigger('prev.owl.carousel',[500]);
+        });
+
+        next.click(function () {
+            owl.trigger('next.owl.carousel',[500]);
+        });
+    })
+
+    $(function () {
+        var expertsIsotope = $('.experts-isotope');
+        
+        expertsIsotope.isotope({
+            itemSelector: '.expert',
+            layoutMode: 'fitRows'
+        });
+        $('.choix-theme').on('click','button', function () {
+
+            $('.choix-theme').find('.active').removeClass('active');
+            $(this).addClass('active');
+            var filterValue = $(this).attr('data-theme');
+            expertsIsotope.isotope({filter : filterValue});
+            $('.select-theme').val(filterValue);
+        })
+
+
+        $('.select-theme').on('change',function () {
+            var filterValue = $(this).val();
+            expertsIsotope.isotope({filter : filterValue});
+            $('.choix-theme').find('.active').removeClass('active');
+            $('.choix-theme').find('[data-theme = "'+filterValue+'"]').addClass('active');
+        })
+    })
+
 
 
     /********************************

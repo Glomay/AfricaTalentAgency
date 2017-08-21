@@ -1,7 +1,16 @@
 @import "variables";
 
+
 /*responsive design*/
-@media (max-width: 767px) {
+@media (max-width: 992px) {
+  .experts-isotope{
+    .expert{
+      width: calc(100% / 3);
+    }
+  }
+}
+
+@media (max-width: 768px) {
   .main-header{
     .nav-menu{
       .nav.navbar-nav{
@@ -48,6 +57,12 @@
       }
     }
   }
+
+  .experts-isotope{
+    .expert{
+      width: 50%;
+    }
+  }
 }
 
 @media (max-width: 425px) {
@@ -61,6 +76,11 @@
           font-size: 15px;
         }
       }
+    }
+  }
+  .experts-isotope{
+    .expert{
+      width: 100%;
     }
   }
 }
