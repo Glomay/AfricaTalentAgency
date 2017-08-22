@@ -80,9 +80,9 @@ a:active {
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
     .experts-isotope .expert .details .nom {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 15px; }
+      font-size: 20px;
+      margin-bottom: 15px;
+      font-family: 'Playfair Display', serif; }
 .experts-isotope .expert:hover .details {
   bottom: 10px; }
 
