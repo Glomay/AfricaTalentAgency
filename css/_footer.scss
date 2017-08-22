@@ -1,6 +1,6 @@
 .main-footer{
   background-color: $couleur;
-  h1{
+  .section-title{
     text-align: center;
     padding: 20px 0;
   }
@@ -46,6 +46,7 @@
   }
 }
 .footer-bottom{
+  padding: 15px 0 0;
   background-color: $vert-fonce;
   p{
     color: #fff;
@@ -57,10 +58,11 @@
       display: inline-block;
       vertical-align: top;
       margin: 0 5px;
-      a{
+      a, span{
         color: #fff;
         padding: 5px;
         font-size: 16px;
+        cursor: pointer;
       }
     }
   }

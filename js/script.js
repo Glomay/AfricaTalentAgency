@@ -23,6 +23,27 @@ $(document).ready(function(){
     })
 
     $(function () {
+        var homeSectionActualite = $('.actu'),
+            owl = homeSectionActualite.find('.owl-carousel');
+
+        owl.owlCarousel({
+            loop:false,
+            margin: 15,
+            responsive:{
+                0:{
+                    items:1
+                },
+                767:{
+                    items:2
+                },
+                1280:{
+                    items:3
+                }
+            }
+        });
+    })
+
+    $(function () {
         var expertsIsotope = $('.experts-isotope');
         
         expertsIsotope.isotope({
@@ -48,6 +69,23 @@ $(document).ready(function(){
     })
 
 
+    var btt = $('.back-to-top');
+
+    btt.on('click', function () {
+
+        $('html, body').animate({
+
+            scrollTop: 0
+
+        }, 800, function () {
+
+            btt.fadeOut();
+
+        });
+
+    })
+
+    
 
     /********************************
      Nav menu hover
@@ -65,6 +103,16 @@ $(document).ready(function(){
     }
     $(window).resize(bootstrapNavHover())
     bootstrapNavHover();
+    
+    
+    $(function () {
+        var countryCarousel = $(".country-carousel"),
+            owl = countryCarousel.find(".owl-carousel");
+
+        owl.owlCarousel({
+            items: 10
+        });
+    })
 
 
 });

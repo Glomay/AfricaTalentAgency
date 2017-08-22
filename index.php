@@ -6,7 +6,7 @@
             <div class="slide" style="background-image: url('img/img<?php echo $i;?>.jpg')">
                 <div class="container"">
                     <div class="content-text">
-                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <h3 class="slide-title">Lorem ipsum dolor sit amet</h3>
                         <p>Donec convallis, nibh nec blandit suscipit, ante enim tristique ex, eget elementum tellus tellus sed arcu. Phasellus risus nunc, vestibulum a mi vel, faucibus rhoncus sem.</p>
                     </div>
                     <a href="#" class="btn btn-success more">En savoir plus</a>
@@ -21,7 +21,7 @@
     </div>
 
 <div class="main-theme">
-    <h1>Nos experts par theme</h1>
+    <h2 class="section-title">Nos experts par thème</h2>
     <div class="container-fluid">
         <ul class="choix-theme hidden-xs">
             <?php
@@ -67,7 +67,7 @@
 
 <div class="theme-pays">
     <div class="container">
-        <h1>Nos experts par pays</h1>
+        <h2 class="section-title">Nos experts par pays</h2>
         <div class="row">
             <div class="col-sm-6">
                 <a href="#" id="carte"> <img src="img/carte_afrique.png" height="500"> </a>
@@ -80,38 +80,40 @@
 </div>
 
 <div class="actu">
-    <div class="container-fluid">
-        <h1>Actualite par pays</h1>
-        <div class="row">
-            <div class="col-sm-2">
-                <div class="choix-theme">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Lorem ipsum dolor</a></li>
-                        <li><a href="#">Lorem ipsum dolor</a></li>
-                        <li><a href="#">Lorem ipsum dolor</a></li>
-                        <li><a href="#">Lorem ipsum dolor</a></li>
-                    </ul>
-                </div>
-            </div>
+    <div class="container">
+        <h2 class="section-title">Actualité par pays</h2>
+        <div class="articles">
+            <div class="owl-carousel owl-theme">
+                <?php for($i =1; $i <= 2; $i++):?>
+                    <div class="actualite">
+                        <a href="#" id="photo">
+                            <div class="picture_frame">
+                                <img src="img/actu1.jpg" class="img-responsive">
+                            </div>
+                            <h4>Interdum et malesuada fames</h4>
+                            <span class="pays">Gabon</span>
+                            <h5>10/05/2017</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem massa, pellentesque ut
+                                facilisis nec, vulputate vitae tortor. Suspendisse id iaculis neque. Praesent non turpis
+                                sed neque sodales egestas. Sed ut dui id sem sodales auctor eu tempor augue.</p>
+                        </a>
+                    </div>
 
-            <div class="col-sm-5">
-                <div class="actualite">
-                    <a href="#" id="photo"> <img src="img/actu1.jpg" class="img-responsive"> </a>
-                    <h4>Interdum et malesuada fames</h4>
-                    <h5>10/05/2017</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem massa, pellentesque ut facilisis nec, vulputate vitae tortor. Suspendisse id iaculis neque. Praesent non turpis sed neque sodales egestas. Sed ut dui id sem sodales auctor eu tempor augue.</p>
-                    <span class="fa fa-plus"></span>
-                </div>
-            </div>
+                    <div class="actualite">
+                        <a href="#" id="photo">
+                            <div class="picture_frame">
+                                <img src="img/actu2.jpg" class="img-responsive">
+                            </div>
 
-            <div class="col-sm-5">
-                <div class="actualite">
-                    <a href="#" id="photo"> <img src="img/actu2.jpg" class="img-responsive"> </a>
-                    <h4>Interdum et malesuada fames</h4>
-                    <h5>10/05/2017</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem massa, pellentesque ut facilisis nec, vulputate vitae tortor. Suspendisse id iaculis neque. Praesent non turpis sed neque sodales egestas. Sed ut dui id sem sodales auctor eu tempor augue.</p>
-                    <span class="fa fa-plus"></span>
-                </div>
+                            <h4>Interdum et malesuada fames</h4>
+                            <div class="pays">Cameroun</div>
+                            <h5>10/05/2017</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem massa, pellentesque ut
+                                facilisis nec, vulputate vitae tortor. Suspendisse id iaculis neque. Praesent non turpis
+                                sed neque sodales egestas. Sed ut dui id sem sodales auctor eu tempor augue.</p>
+                        </a>
+                    </div>
+                <?php endfor;?>
             </div>
         </div>
     </div>

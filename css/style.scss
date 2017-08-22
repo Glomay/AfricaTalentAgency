@@ -1,18 +1,30 @@
 
 @import "variables";
 @import "header";
+body{
+  font-family: 'Open Sans', sans-serif;
+}
 
 *, *:active{
   outline: none;
 }
 
 .main-theme{
-  h1{
+  .section-title{
     text-align: center;
     padding: 20px 0;
+    font-size: 36px;
   }
 }
+a:hover,
+a:active{
+  text-decoration: none;
+}
 
+
+.section-title{
+  font-family: 'Playfair Display', serif;
+}
 
 .experts-isotope{
   .expert{
@@ -80,7 +92,8 @@
       background: none;
       height: 60px;
       text-transform: uppercase;
-      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
       color: #393939;
       position: relative;
     }
@@ -106,7 +119,7 @@
 
 .theme-pays{
   background-color: $couleur;
-  h1{
+  .section-title{
     text-align: center;
     padding: 20px 0;
   }
@@ -118,7 +131,7 @@
 
 .actu{
   padding-bottom: 10px;
-  h1{
+  .section-title{
     text-align: center;
     padding: 20px 0;
   }
@@ -137,20 +150,38 @@
     border: solid 2px $vert;
     padding: 10px;
     margin: 5px 0;
-    img{
-      display: block;
-      margin: auto;
+
+    .picture_frame{
+      overflow: hidden;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    span{
-      float: right;
-      color: $vert-fonce;
+    h4{
+      color: $noir;
+      font-weight: 700;
+    }
+    .pays{
+      color: #fff;
+      display: inline-block;
+      padding: 3px 8px;
+      background-color: $vert-fonce;
+      border-right: 2px;
+    }
+    h5{
+      font-style: italic;
+      color: $noir;
+    }
+    p{
+      color: $noir;
     }
   }
 }
 .main-img{
   padding: 0;
   .content{
-    h1{
+    .slide-title{
       margin-top: 0;
       padding: 10px;
     }
@@ -215,7 +246,7 @@
   }
 
   .theme{
-    h1{
+    .slide-title{
       color: $noir;
     }
     .btn{

@@ -15,7 +15,7 @@
     <link href="plugins/owlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="plugins/owlCarousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <!--<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
     <!-- Animate-css -->
     <link rel="stylesheet" href="plugins/animate-css/animate.css">
     <!-- css file -->
