@@ -2,7 +2,7 @@
 @import "variables";
 @import "header";
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: $police1
 }
 
 *, *:active{
@@ -23,7 +23,7 @@ a:active{
 
 
 .section-title{
-  font-family: 'Playfair Display', serif;
+  font-family: $police2
 }
 
 .experts-isotope{
@@ -63,7 +63,7 @@ a:active{
       .nom{
         font-size:  20px;
         margin-bottom: 15px;
-        font-family: 'Playfair Display', serif;
+        font-family: $police2;
       }
     }
   }
@@ -92,7 +92,7 @@ a:active{
       background: none;
       height: 60px;
       text-transform: uppercase;
-      font-family: 'Playfair Display', serif;
+      font-family: $police2;
       font-size: 18px;
       color: #393939;
       position: relative;
@@ -178,87 +178,37 @@ a:active{
     }
   }
 }
-.main-img{
-  padding: 0;
-  .content{
-    .slide-title{
-      margin-top: 0;
-      padding: 10px;
-    }
-    P{
-      padding: 10px;
-    }
-    height: 500px;
-    width: auto;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-  }
-}
-.liste{
-  padding: 10px;
-  .expert-descrip{
-    border: solid 2px $vert;
-    padding: 5px;
-    margin: 5px 0;
-    a{
-      color: $vert;
-    }
-    .btn{
-      float: right;
-      background: none;
-      color: $noir;
-      border-radius: 0;
-      border: solid 1px $vert-fonce;
-    }
-  }
-}
 
-#side{
-  background-color: $couleur;
-  .side_menu{
-    padding: 10px;
 
-    .search-bar{
-      padding: 5px 0 5px 0;
-      overflow: hidden;
-      form {
-        float: right;
-        input{
-          border: solid 1px $vert;
-          background-color: $couleur;
-          width: 100%;
-        }
-        button{
-          background: none;
-          float: left;
-          border: hidden;
-          color: $vert;
-          display: block;
-          position: absolute;
-          top: 20px;
-        }
+.page-banner{
+  background-size: cover;
+  background-position:  center center;
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 400px;
+
+    .content{
+      width: 50%;
+      .page-title{
+        font-size: 42px;
+        color: #fff;
+        font-family: $police2;
+      }
+      .small-title{
+        color: #fff;
       }
     }
-    a{
-      color: $vert;
-    }
-  }
-
-  .theme{
-    .slide-title{
-      color: $noir;
-    }
-    .btn{
-      float: right;
-      background-color: $couleur;
-      color: $noir;
-      border-radius: 0;
-      border: none;
-    }
   }
 }
+
+
+
 
 @import "mainCarousel";
 @import "footer";
+@import "liste-experts";
+@import "sidebar";
 @import "responsive";

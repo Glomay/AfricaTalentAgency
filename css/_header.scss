@@ -1,6 +1,6 @@
 .main-header{
   background-color: $couleur;
-  .search-bar{
+  /*.search-bar{
     form {
       margin-top: 5px;
       input{
@@ -20,9 +20,12 @@
         top: 10px;
       }
     }
-  }
+  }*/
 
   .nav-menu{
+    font-family: $police2;
+    font-size: 16px;
+    margin-top: 40px;
     button{
       background-color: $vert;
       span{
@@ -33,6 +36,7 @@
       border: none;
       box-shadow: none;
       border-radius: 0;
+      font-family: $police1;
     }
     .nav.navbar-nav{
       float: right;

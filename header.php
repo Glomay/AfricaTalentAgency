@@ -40,7 +40,7 @@ respond.min.js"></script>
                     <a href="index.php" id="main-logo1"> <img src="img/logo-2_1.png" height="110"> </a>
                 </div>
                 <div class="col-sm-9">
-                    <div class="search-bar">
+                    <!--<div class="search-bar">
                         <div class="row">
                             <div class="col-sm-5 col-sm-push-7">
                                 <form action="">
@@ -49,7 +49,7 @@ respond.min.js"></script>
                                 </form>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
                     <div class="nav-menu">
                         <nav class="navbar" role="navigation">
@@ -71,8 +71,8 @@ respond.min.js"></script>
                                             Nos experts <b class="caret"></b>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Experts par thème</a></li>
-                                            <li><a href="#">Experts par pays</a></li>
+                                            <li><a href="liste_expert.php">Experts par thème</a></li>
+                                            <li><a href="liste_expert.php">Experts par pays</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Nos services</a></li>

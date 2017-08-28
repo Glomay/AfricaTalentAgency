@@ -1,0 +1,54 @@
+.main-img{
+  padding: 0;
+  .content{
+    .slide-title{
+      margin-top: 0;
+      padding: 10px;
+    }
+    P{
+      padding: 10px;
+    }
+    height: 500px;
+    width: auto;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }
+}
+
+.liste{
+  .expert-descrip{
+    border: solid 2px $vert;
+    padding: 15px;
+    margin: 5px 0;
+    a.frame{
+      display: flex;
+      width: 100%;
+      height: 190px;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+    }
+    h4{
+      font-family: $police2;
+      font-size: 18px;
+    }
+    p{
+      font-size: 13px;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0 0 15px;
+    }
+    a{
+      color: $vert;
+    }
+    .btn{
+      background: none;
+      color: $noir;
+      border-radius: 0;
+      border: solid 1px $vert-fonce;
+    }
+  }
+}

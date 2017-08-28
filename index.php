@@ -21,7 +21,7 @@
     </div>
 
 <div class="main-theme">
-    <h2 class="section-title">Nos experts par thème</h2>
+    <h2 class="section-title">Nos experts par thèmes</h2>
     <div class="container-fluid">
         <ul class="choix-theme hidden-xs">
             <?php
