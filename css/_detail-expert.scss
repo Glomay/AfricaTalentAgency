@@ -1,0 +1,191 @@
+.banniere-page{
+  margin-bottom: 30px;
+  .container{
+    display: flex;
+    align-items: center;
+    height: 450px;
+  }
+  .content{
+    width: 60%;
+    .nom-expert{
+      color: #fff;
+      font-family: $police2;
+    }
+    .description{
+      color: #fff;
+    }
+  }
+}
+
+.corps-page{
+  .detail-expert{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+    .libelle{
+      color: $vert;
+    }
+
+  }
+
+  .titre-section{
+    font-family: $police2;
+    font-size: 25px;
+  }
+
+  .liste-themes{
+    list-style: square;
+  }
+
+  .bio-expert{
+    margin-bottom: 20px;
+  }
+  .bouton-contact{
+    background-color: $vert;
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  #mediatheque{
+    background-color: #393939;
+    margin: 20px 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    .lecteur-video{
+      width: 70%;
+      overflow: hidden;
+      height:  375px;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+
+      img{
+        width: 100%;
+        height: auto;
+      }
+
+      .filtre{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, 0.4);
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        transform-origin: center center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-transition: all 0.2s ease-in-out;
+      }
+      .filtre:before{
+        content: '\f16a';
+        font-family: "FontAwesome", sans-serif;
+        position: absolute;
+        z-index: 2;
+        font-size: 50px;
+        color: $vert;
+      }
+    }
+
+    .gallerie-photos{
+      width: 30%;
+
+      .cadre-photo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+        height:  180px;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+
+        img{
+          width: 100%;
+        }
+
+        .filtre{
+          width: 94%;
+          height: 94%;
+          background-color: rgba(#000, 0.4);
+          position: absolute;
+          z-index: 1;
+          left: 3%;
+          top: 3%;
+          -webkit-transform: scale(0);
+          transform-origin: center center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          -webkit-transition: all 0.2s ease-in-out;
+        }
+        .filtre:before{
+          content: '\f00e';
+          font-family: "FontAwesome", sans-serif;
+          position: absolute;
+          z-index: 2;
+          font-size: 50px;
+          color: $vert;
+        }
+      }
+      .cadre-photo:hover{
+        .filtre{
+          -webkit-transform: scale(1);
+        }
+      }
+
+    }
+  }
+
+  .section-suggestions{
+    background-color: $vert;
+    padding: 15px 0;
+    .titre-section {
+      color: #fff;
+      text-align: center;
+    }
+
+    .liste-suggestions{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      li{
+        float: left;
+        width: 25%;
+        padding: 10px;
+        overflow: hidden;
+        text-align: center;
+        a{
+          color: #fff;
+          font-size: 17px;
+          font-family: $police2;
+        }
+
+        .cadre-photo{
+          width: 100%;
+          height: 180px;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

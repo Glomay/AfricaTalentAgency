@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
     <!-- Animate-css -->
     <link rel="stylesheet" href="plugins/animate-css/animate.css">
+    <!--Magnific popup-->
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
     <!-- css file -->
     <link href="css/style.css" rel="stylesheet">
     <!-- favicon -->
@@ -67,16 +69,16 @@ respond.min.js"></script>
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="index.php">Accueil</a></li>
                                     <li class="dropdown">
-                                        <a href="liste_expert.php" class="dropdown-toggle" data-toggle="dropdown">
+                                        <a href="experts.php" class="dropdown-toggle" data-toggle="dropdown">
                                             Nos experts <b class="caret"></b>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="liste_expert.php">Experts par thème</a></li>
-                                            <li><a href="liste_expert.php">Experts par pays</a></li>
+                                            <li><a href="experts.php">Experts par thème</a></li>
+                                            <li><a href="experts.php">Experts par pays</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Nos services</a></li>
-                                    <li><a href="#">Themes</a></li>
+                                    <li><a href="themes.php">Themes</a></li>
                                     <li><a href="#">Qui sommes-nous?</a></li>
                                 </ul>
                             </div>

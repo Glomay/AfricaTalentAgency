@@ -17,7 +17,7 @@
                 <div class="expert-descrip">
                     <div class="row">
                         <div class="col-sm-3">
-                            <a href="#" class="frame">
+                            <a href="expert.php" class="frame">
                                 <img src="img/exp<?php echo $i;?>.jpg" class="img-responsive">
                             </a>
                         </div>
@@ -32,7 +32,7 @@
                                 <li><a href="#">Interdum et malesuada</a></li>
                                 <li><a href="#">Interdum et malesuada</a></li>
                             </ul>
-                            <a href="#" class="btn more">En savoir plus</a>
+                            <a href="expert.php" class="btn more">En savoir plus</a>
                         </div>
 
                     </div>

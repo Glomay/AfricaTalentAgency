@@ -115,4 +115,25 @@ $(document).ready(function(){
     })
 
 
+    /********************************
+     Magnific Popup
+     ********************************/
+
+
+    $('.gallerie-photos').each(function () {
+        $(this).magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled:true
+            }
+        });
+    });
+
+    $('.lecteur-video').magnificPopup({
+        delegate: 'a',
+        type: 'iframe'
+    });
+
+
 });

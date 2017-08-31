@@ -77,6 +77,7 @@
 <script src="plugins/owlCarousel/dist/owl.carousel.min.js"></script>
 <script src="plugins/isotope/isotope.pkgd.min.js"></script>
 <script src="plugins/holder.js/holder.min.js"></script>
+<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
